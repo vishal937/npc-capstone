@@ -1,0 +1,61 @@
+# ==============================================================================
+# NPC Capstone Project - Malware Analysis Sandbox .gitignore
+# Student: Vishal Katyare | PRN: 2125UCSM1034
+# Department of Computer Science Engineering (Cyber Security)
+# Sanjivani University, Kopargaon
+# ==============================================================================
+
+# Virtual Machine Disks and Images (Prevent large VM binary commits)
+*.vdi
+*.vmdk
+*.vhd
+*.vhdx
+*.iso
+*.img
+*.qcow2
+*.ova
+*.ovf
+
+# Virtual Machine State and Memory Snapshots
+*.vmem
+*.vmsn
+*.vmsd
+*.nvram
+*.sav
+*.dmp
+*.raw
+
+# Hypervisor Runtime Logs and Cache
+*.log
+vbox.log*
+vmware*.log
+*.vmx.lck
+*.vmdk.lck
+
+# Python Caches and Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+py_runtime/
+
+# IDE and Editor Metadata
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Large Transient Network Captures (Keep only small laboratory demo pcaps if needed)
+*.pcapng
+*.cap
+# Exclude captures larger than 5MB
